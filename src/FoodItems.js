@@ -13,7 +13,7 @@ const FoodItems = ({data}) => {
              <center>
                 <h5 className='card-title'>{data.recipe.label}</h5>
                 <h5>Rs {(Math.round(data.recipe.calories/10))}</h5>
-                <button className='btn btn-primary buy'>Buy</button>
+                <button className='btn btn-primary buy' onClick={()=>alert('Your Order Was Successful...!!' +'\n'+'Your Order Will be Delivered with in 5 minutes')}>Buy</button>
              </center>
             </div>
         </div>
